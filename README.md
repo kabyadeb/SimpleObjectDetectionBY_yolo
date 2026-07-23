@@ -4,6 +4,22 @@ This project trains a **YOLOv8 classification model** (`yolov8n-cls.pt`) on cust
 
 > Note: despite the repository name, the current notebook workflow is image **classification** (not bounding-box object detection).
 
+## Figures
+
+### 1) Project workflow
+
+```mermaid
+flowchart LR
+    A[Images in Google Drive] --> B[Train/Val Split]
+    B --> C[YOLOv8 Classification Training]
+    C --> D[Validation Metrics]
+    C --> E[Prediction on New Image]
+```
+
+### 2) Sample prediction output
+
+![Sample YOLOv8 classification prediction](figures/sample_prediction.jpg)
+
 ## Repository Contents
 
 - `assignment_8_yolo_task1.ipynb` – end-to-end Colab workflow:
@@ -14,6 +30,7 @@ This project trains a **YOLOv8 classification model** (`yolov8n-cls.pt`) on cust
   - train YOLOv8 classifier
   - run validation and prediction
 - `README.md` – project documentation
+- `figures/sample_prediction.jpg` – sample prediction output extracted from notebook results
 
 ## Classes Used
 
